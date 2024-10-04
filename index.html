@@ -429,6 +429,7 @@
     if (remaining != 0) {
       setTimeout(showRandomTown, (1000 / remaining));
     } else {
+      $("div.town").hide();
       $("div.ok").eq(Math.floor(Math.random() * 30)).show(speed);
       addExternalPages($("div.town:visible").text());
     }
